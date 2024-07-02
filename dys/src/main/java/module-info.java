@@ -10,6 +10,8 @@ module dys.sys {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
+    requires java.sql;
 
     opens dys.sys to javafx.fxml;
     exports dys.sys;

@@ -8,7 +8,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dys.sys.HelloController">
    <children>
-      <Button fx:id="seç_1" layoutX="25.0" layoutY="214.0" mnemonicParsing="false" text="seç" />
+      <Button fx:id="seç_1" layoutX="25.0" layoutY="214.0" mnemonicParsing="false" onAction="#setSeç_1" text="seç" />
       <Button fx:id="yedek" layoutX="59.0" layoutY="214.0" mnemonicParsing="false" text="yedekle" />
       <Button fx:id="seç_2" layoutX="541.0" layoutY="214.0" mnemonicParsing="false" text="seç" />
       <Button fx:id="kur" layoutX="507.0" layoutY="214.0" mnemonicParsing="false" text="kur" />
