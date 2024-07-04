@@ -51,9 +51,15 @@ public class HelloController {
         try {
             Connection con=DriverManager.getConnection("jdbc:ucanaccess://src\\main\\resources\\dys\\sys\\depo.accdb");
             Statement st= con.createStatement();
+            st.execute("INSERT INTO a ([as dosya],[yed yeri],[işlem],[işlem tariği]) VALUES ('Jane Doe', 'janedoe@e',1,'2222-07-04 23:59:59')");
             ResultSet rs=st.executeQuery("Select * from a");
-            while (rs.next())
+            while (rs.next()) {
+                System.out.println(rs.getString(1));
                 System.out.println(rs.getString(2));
+                System.out.println(rs.getString(3));
+                System.out.println(rs.getString(4));
+                System.out.println(rs.getString(5));
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
